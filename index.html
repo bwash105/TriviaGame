@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TIAB Trivia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <img id="background" src="assets/images/space-background.jpg" alt="background">
+
+
+        <h1 id="title" class="text-center">To Infinity and Beyond Trivia!</h1>    
+      <br>
+      <br>
+      <div class="text-center" id="big-button">
+    
+        <!-- <!start> -->
+        <button id="start" class="btn btn-primary btn-lg"><h4>Start</h4><img src="assets/images/rocket.png" class="img-responsive" alt="crystal-1" width="50" height="60"></button>
+    
+    </div>
+    <br>
+    <br>
+<div class="container">
+    <div class="text-center">
+        <br>
+        <div class="questions">
+            <br>
+            <div id="timer"><h4 id="loud">BLAST OFF!</h4></div>
+            <br>
+            <form id="quiz" name="quiz" action="" method="get">
+                <p>Which is the only planet that rotates clockwise?</p>
+                <input type="radio" name="q1" id="mc" value="venus"> Venus<br>
+                <input type="radio" name="q1" id="mc" value="saturn"> Saturn<br>
+                <input type="radio" name="q1" id="mc" value="earth"> Earth<br>
+                <br>
+
+                <p>Terra is the Latin name for which planet in our solar system?</p>
+                <input type="radio" name="q2" id="mc" value="uranus"> Uranus<br>
+                <input type="radio" name="q2" id="mc" value="mercury"> Mercury<br>
+                <input type="radio" name="q2" id="mc" value="earth"> Earth<br>
+                <br>
+
+                <p>How many planets are there in our solar system?</p>
+                <input type="radio" name="q3" id="mc" value="8"> 8<br>
+                <input type="radio" name="q3" id="mc" value="9"> 9<br>
+                <input type="radio" name="q3" id="mc" value="3"> 3<br>
+                <br>
+
+                <p>Which is the largest planet in our solar system?</p>
+                <input type="radio" name="q4" id="mc" value="Saturn"> Saturn<br>
+                <input type="radio" name="q4" id="mc" value="Venus"> Venus<br>
+                <input type="radio" name="q4" id="mc" value="Jupiter"> Jupiter<br>
+                <br>
+
+                <p>The full moon seen closest to the time of the Autumn Equinox is commonly known as what?</p>
+                <input type="radio" name="q5" id="mc" value="blood"> Blood Moon<br>
+                <input type="radio" name="q5" id="mc" value="harvest"> Harvest Moon<br>
+                <input type="radio" name="q5" id="mc" value="fall"> Fall Moon<br>
+                <br>
+
+                <p>In March 1977, the rings of which planet in our solar system were discovered?</p>
+                <input type="radio" name="q6" id="mc" value="neptune"> Neptune<br>
+                <input type="radio" name="q6" id="mc" value="jupiter"> Jupiter<br>
+                <input type="radio" name="q6" id="mc" value="uranus"> Uranus<br>
+                <br>
+
+                <p>The North Star is also known by what other name?</p>
+                <input type="radio" name="q7" id="mc" value="polaris"> Polaris<br>
+                <input type="radio" name="q7" id="mc" value="ra"> Ra<br>
+                <input type="radio" name="q7" id="mc" value="big"> Big Shiny<br>
+                <br>
+
+                <p>Phobos and Diemos are the moons of which planet in our solar system?</p>
+                <input type="radio" name="q8" id="mc" value="mars"> Mars<br>
+                <input type="radio" name="q8" id="mc" value="jupiter"> Jupiter<br>
+                <input type="radio" name="q8" id="mc" value="uranus"> Uranus<br>
+                <br>
+
+                <p>Which US astronaut became the first man to hit a golf ball on the moon?</p>
+                <input type="radio" name="q9" id="mc" value="lance"> Lance Armstrong<br>
+                <input type="radio" name="q9" id="mc" value="alan"> Alan Shepard<br>
+                <input type="radio" name="q9" id="mc" value="neil"> Neil deGrasse Tyson<br>
+                <br>
+
+                <p>What is the name of the tool used by astronauts that combines pliers and wrench?</p>
+                <input type="radio" name="q10" id="mc" value="grab"> Grab-n-Twist<br>
+                <input type="radio" name="q10" id="mc" value="clencher"> Clencher<br>
+                <input type="radio" name="q10" id="mc" value="plench"> Plench<br>
+                <br>
+                <br>
+                <input type="button" id="button" value="To the Moon!" onclick="check();">
+              </form>
+              <br>
+                <div id="after_submit">
+                    <h3>Results:</h3>
+                    <h4 id="number_correct"></h4>
+                    <h4 id="number_incorrect"></h4>
+                    
+                </div>
+                <br>
+                <br>
+        </div>
+    </div>
+</div>
+      <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
